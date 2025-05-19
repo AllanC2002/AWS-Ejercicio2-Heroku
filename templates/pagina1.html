@@ -1,0 +1,54 @@
+<!--  index.html  -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lácteos – Catálogo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='CSS/pagina1.css') }}">
+
+
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <h1 class="logo">Lácteos</h1>
+    <p class="slogan">Calidad y frescura de la granja a tu mesa</p>
+  </header>
+
+  <!-- Tipo de productos -->
+  <section class="product-type">
+    <h2>Productos lácteos artesanales</h2>
+    <p>Cremosos yogures, quesos frescos y la mejor leche pasteurizada.</p>
+    <p>{{ 5 + 5 }}</p>
+
+  </section>
+
+  <!-- Lista de productos -->
+  <main class="product-list">
+    <article class="product-card">
+      <img src="{{ url_for('static', filename='images/yogur.png') }}" alt="Yogur natural 500 g" />
+      <h3>Yogur Natural 500 g</h3>
+      <p class="price">$ 2,50</p>
+    </article>
+
+    <article class="product-card">
+      <img src="{{ url_for('static', filename='images/queso.png') }}" alt="Queso fresco 250 g" />
+      <h3>Queso Fresco 250 g</h3>
+      <p class="price">$ 3,75</p>
+    </article>
+
+    <article class="product-card">
+      <img src="{{ url_for('static', filename='images/leche.png') }}" alt="Leche entera 1 L" />
+      <h3>Leche Entera 1 L</h3>
+      <p class="price">$ 1,30</p>
+    </article>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>&copy; 2025&nbsp;Lácteos&nbsp;S.A. – Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
