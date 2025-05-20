@@ -92,3 +92,35 @@ body {
   color: white;
   font-size: 14px;
 }
+
+.nav {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 5px 50px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: #eee;
+}
+
+.nav-list a.active {
+    background-color: #328e83; /* rojo oscuro o el color de marca */
+    color: #fff;
+}
